@@ -1,0 +1,129 @@
+
+/*.home{
+  background-image: url("../../assets/frontpage-1.png");  
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center;
+}*/
+ 
+.home_section_title{
+    text-align: left;
+    margin-top: 0.375rem;
+}
+
+.home_section_subtitle{
+    text-align: left;
+    margin-top: 0.375rem;
+}
+background_Img{
+  position: relative;
+  overflow: hidden;
+}
+.bg-1{
+  height: 660px;
+  width: 1080px;
+}
+
+.bg-2{
+  left:0;
+  top:0;
+  position: absolute;
+  height: 660px;
+  width: 1080px;
+  opacity: 0;
+}
+
+.home_button:hover ~.bg-1{
+  opacity: 0;
+}
+.home_button:hover ~ .bg-2{
+  opacity: 1;
+}
+/*.home_button {
+    display: inline-block;
+    background-color:aquamarine;
+    color: aquamarine;
+    padding: 0.75rem 2rem;
+    line-height: 1;
+    border-radius: 1.875rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    border:1px solid transparent;
+    color: #fff;
+    font-weight:var(--font-bold);
+}*/
+.bubbles{
+  position: relative;
+  display: flex;
+}
+.bubbles span{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44,
+  0 0 50px #4fc3dc,
+  0 0 100px #4fc3dc;
+  animation: raiseup 15s linear infinite;
+  animation-duration: calc(125s/ var(--i)) ;
+}
+@keyframes raiseup {
+  0%{
+    transform: translateY(100vh)scale(0);
+  }
+  100%{
+    transform: translateY(-10vh)scale(1);
+  }
+}
+
+.bubbles span:nth-child(even){
+  background: #fde992;
+  box-shadow: 0 0 0 10px #fdefb2,
+  0 0 50px #fde992,
+  0 0 100px #fde992;
+}
+
+.home_button{
+    display: inline-block;
+    position:absolute;
+    bottom: 35rem;
+    left: 25rem;
+    z-index: 2;
+    background-color:aquamarine;
+    color: aquamarine;
+    padding: 0.75rem 2rem;
+    line-height: 1;
+    border-radius: 1.875rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    border:1px solid transparent;
+    color: #fff;
+    font-weight:var(--font-bold);
+    cursor:pointer;
+    transition: border-color 0.5s,
+    background-color 0.5s, color 0.5s;
+}
+
+@keyframes button-push {
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.home_button_title{
+  color:#fff;
+}
+
+.home_button:hover{
+  animation: button-push 0.3s linear 1;
+  background-color: darkcyan;
+}
+
+.home_button:hover .home{
+  background-image: url("../../assets/fp-3.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
