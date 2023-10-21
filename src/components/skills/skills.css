@@ -1,25 +1,23 @@
-
-
 .skills_section_title,
-.skills_section_subtitle{
+.skills_section_subtitle {
     text-align: center;
     margin-top: 0.5rem;
 }
 
 .skills_container {
-    grid-template-columns: repeat(2, 500px); 
+    grid-template-columns: repeat(2, 500px);
     column-gap: 3rem;
     justify-content: center;
     margin-bottom: 300px;
     margin-top: 100px;
-    
+
 }
 
 .skills_content {
     background-color: var(--container-color);
     padding: 2rem 10rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius:  1.25rem;
+    border-radius: 1.25rem;
     position: relative;
     box-shadow: var(--shadow);
 }
@@ -46,7 +44,7 @@
 
 .skills_data {
     display: flex;
-    column-gap: 0.5rem;    
+    column-gap: 0.5rem;
 }
 
 .skills .bx-badge-checl {
@@ -54,10 +52,10 @@
     color: var(--first-color)
 }
 
-.skills_name{
+.skills_name {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    justify-content:  center;
+    justify-content: center;
     line-height: 18px;
 }
 
@@ -65,35 +63,35 @@
     font-size: var(--smaller-font-size);
 
 }
+
 /*============ BREAKPOINTS ==============*/
 /* LARGER DEVICES */
-@media screen and (max-width: 1024px){  
+/* @media screen and (max-width: 1024px) {
     .skills_container {
         grid-template-columns: max-content;
         row-gap: 2rem;
     }
-}
+} */
 
 /* MEDIUM DEVICES */
-@media screen and (max-width: 768px){  
+/* @media screen and (max-width: 768px) {} */
 
-}
-@media screen and (max-width: 576px){  
+/* @media screen and (max-width: 576px){  
     .skills_container {
         grid-template-columns: 1fr;
     }
     .skills_container {
         padding: 1.5rem;
     }
-}
+} */
 
 /* SMALL DEVICES */
-@media screen and (max-width: 350px){  
-    .skills_container{
+/* @media screen and (max-width: 350px) {
+    .skills_container {
         column-gap: 1.25rem;
     }
 
     .skills_name {
         font-size: var(--small-font-size);
     }
-}
+} */

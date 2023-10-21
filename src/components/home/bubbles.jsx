@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
 const BubbleContainer = () => {
+    const [screenSize, setScreenSize] = useState(getCurrentDimension());
+
+    function getCurrentDimension() {
+        return {
+            width: window.innerWidth,
+            height: window.innerHeight
+        }
+    }
+
+    useEffect(() => {
+        const updateDimension = () => {
+            setScreenSize(getCurrentDimension())
+        }
+        window.addEventListener('resize', updateDimension);
+
+
+        return (() => {
+            window.removeEventListener('resize', updateDimension);
+        })
+    }, [screenSize])
     return (
         <div className="bubble_container">
             <div className="bubbles">
-                {Bubbles(50)}
+                {Bubbles(Math.floor(screenSize.width / 40))}
             </div >
         </div>
     )

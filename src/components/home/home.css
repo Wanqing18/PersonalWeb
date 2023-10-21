@@ -20,22 +20,21 @@ background_Img {
   overflow: hidden;
 }
 
-.bg-1 {
-  height: 660px;
-  width: 1080px;
-}
-
-.bg-2 {
-  left: 0;
-  top: 0;
+.home_background {
+  background-image: url("../../assets/frontpage-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  height: 660px;
-  width: 1080px;
-  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-position: 85% 85%;
 }
 
-.home_button:hover~.bg-2 {
-  opacity: 1;
+.home_button:hover~.home_background {
+  background-image: url("../../assets/fp-2.png");
 }
 
 /*.home_button {
