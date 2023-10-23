@@ -40,7 +40,7 @@ const Projects = () => {
               <span className="work_category">{category}</span>
               <h3 className="work_title">{title}</h3>
               <span className="work_descriptions">{content}</span>
-              <a href={path} className="work_button">
+              <a target="_blank" href={path} className="work_button">
                 <i className="icon-link work_button-icon"></i>
               </a>
             </div>

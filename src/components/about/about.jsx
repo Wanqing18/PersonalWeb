@@ -6,9 +6,8 @@ import resume from "../../assets/resume.pdf";
 
 const About =() => {
     return(
-        <section className="about container section" id="about">
+        <section className="container section" id="about">
             <h2 className="about_section_title">About Me</h2>
-            <p className="about_section_subtitle">My Introduction</p>
             
             <div className="about_container grid">
                 <img src={AboutImg} alt="" className="about_img" />
@@ -17,11 +16,11 @@ const About =() => {
                 <div className="about_data grid">
                     <div className="about_info">
                         <p className="about_description">
-                            I am Christal, welcome to my webpage,self introduction here!
+                            Hello! I am Christal! I am an Artist, Designer, and Data Scientist. I have experience in Machine Learning and Web Design. 
                         </p>
                         
                         <a href={resume} className="button">
-                        Download Resume
+                            Download Resume
                         </a>
                     </div>    
                 </div>

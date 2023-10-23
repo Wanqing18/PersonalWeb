@@ -1,8 +1,3 @@
-/*.about{
-    background: url("../../assets/fp-2.png");
-    background-repeat: no-repeat;
-    background-size:contain;
-}*/
 .about_section_title,
 .about_section_subtitle{
     text-align: center;
@@ -43,10 +38,9 @@
  }
  .about_description {
      max-width: 700px;
-     grid-template-columns: repeat(3, 140px);
+     grid-template-columns: repeat(, 140px);
      gap:0.5rem;
      margin-bottom: var(--mb-2);
-     text-align: justify;
  }
  
  .button {
