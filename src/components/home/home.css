@@ -1,31 +1,18 @@
-/*.home{
-  background-image: url("../../assets/frontpage-1.png");  
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position: center;
-}*/
-.home{
- background-color: #bed0cb;
-}
 .home_section_title {
   margin-left: 10rem;
   transform: rotate(-10deg);
   font-family: 'Lobster', sans-serif;
   font-size: 120px;
-  width:600px;
-  color:#106070;
-  text-align:left;
+  width: 600px;
+  color: #106070;
+  text-align: left;
   text-shadow: 5px 5px #a8c5b2;
 
 }
 
 
-background_Img {
-  position: relative;
-  overflow: hidden;
-}
 
-.home_background {
+/* .home_background {
   background-image: url("../../assets/frontpage-1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,11 +23,11 @@ background_Img {
   left: 0;
   z-index: -1;
   background-position: 85% 85%;
-}
+} */
 
-.home_button:hover~.home_background {
+/* .home_button:hover~.home_background {
   background-image: url("../../assets/fp-2.png");
-}
+} */
 
 .bubbles {
   position: relative;
@@ -85,28 +72,7 @@ background_Img {
   height: 100vh;
 }
 
-.home_button {
-  width: 250px;
-  height: 50px;
-  font-size:17px;
-  text-align: center;
-  display: inline-block;
-  position: absolute;
-  top: 65%;
-  left: 10%;
-  z-index: 2;
-  background-color:darkcyan;
-  padding: 0.75rem 2rem;
-  line-height: 1;
-  border-radius: 1.875rem;
-  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
-  border: 1px solid transparent;
-  color: #fff;
-  font-weight: var(--font-bold);
-  cursor: pointer;
-  transition: border-color 0.5s,
-    background-color 0.5s, color 0.5s;
-}
+
 
 @keyframes button-push {
   50% {
@@ -122,45 +88,82 @@ background_Img {
   color: #fff;
 }
 
-.home_button:hover {
-  animation: button-push 0.3s linear 1;
-  background-color: var(--hover-color);
+
+
+.home {
+  background-image: url("../../assets/frontpage-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: 85% 85%;
+  pointer-events: none;
 }
 
-.home_button:hover .home {
+.home .home_button {
+  pointer-events: auto;
+  width: 250px;
+  height: 50px;
+  font-size: 17px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  z-index: 2;
+  background-color: darkcyan;
+  padding: 0.75rem 2rem;
+  line-height: 1;
+  border-radius: 1.875rem;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: var(--font-bold);
+  cursor: pointer;
+  transition: border-color 0.5s,
+    background-color 0.5s, color 0.5s;
+}
+
+.home:hover {
   background-image: url("../../assets/fp-3.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.home .home_button:hover {
+  animation: button-push 0.3s linear 1;
+  background-color: var(--hover-color);
+}
+
 /*============ BREAKPOINTS ==============*/
 /* LARGER DEVICES */
-@media screen and (max-width: 1024px){  
+@media screen and (max-width: 1024px) {
 
-  .home_button{
+  .home_button {
     grid-template-columns: 300px 360px;
     justify-content: center;
   }
+
   .home_section_title {
     font-size: 80px;
     width: 400px;
-}
+  }
 }
 
 /* MEDIUM DEVICES */
-@media screen and (max-width: 768px){ 
-  .home_background{
+@media screen and (max-width: 768px) {
+  .home_background {
     width: 768px;
     height: 842px;
   }
+
   .home_section_title {
     font-size: 50px;
     width: 300px;
-}
-}
-@media screen and (max-width: 576px){  
+  }
 }
 
+@media screen and (max-width: 576px) {}
+
 /* SMALL DEVICES */
-@media screen and (max-width: 350px){  
-}
+@media screen and (max-width: 350px) {}
