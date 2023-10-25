@@ -1,11 +1,11 @@
 .footer {
-    border-top: 1px solid #ccdede;
+    border-top: 1px solid var(--container-color);
     color: #bed0cb;
 }
 
 .footer_container {
     padding: 2rem 0 6rem;
-    background-color: #bed0cb;
+    background-color: #ccdede;
 }
 
 .footer_title,
