@@ -6,6 +6,7 @@
 
 
 .work_filters {
+    padding-left: 60px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -23,12 +24,16 @@
 }
 
 .work_container {
+    padding: 2rem 10rem;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.875rem;
-    background-color: #ccdede;
+    /* background-color: #ccdede; */
 }
 
 .work_card {
+    height: 200px;
+    width: 350px;
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius);
@@ -43,7 +48,7 @@
 }
 
 .work_mask {
-    background: #a0c0d0;
+     background: #a0c0d0; 
     position: absolute;
     left: 0;
     top: 0;
@@ -118,11 +123,24 @@
 }
 
 .tiktok_link {
+    color: #fff;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 5rem;
+    font-size: var(--h3-font-size);
+    display: block;
+    background-color: #dd9d95;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    transition: .3s;
     opacity: 0;
 }
 
 .work_card:hover .tiktok_link {
-    opacity: 0;
     opacity: 1;
 }
 
@@ -164,4 +182,18 @@
         justify-content: center;
         row-gap: 1.875rem;
     }
+}
+
+@media screen and (max-width:375px) {
+    .work_filters {
+        row-gap: .25rem;
+        justify-content: center;
+    }
+
+    .work_container {
+        grid-template-columns: 310px;
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
+
 }

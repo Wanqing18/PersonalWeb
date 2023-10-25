@@ -52,6 +52,7 @@
 
 .experience_data_right {
     display: grid;
+    padding-top: 10px;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
 }
@@ -101,7 +102,11 @@
 /* MEDIUM DEVICES */
 @media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 437px) {
+    .experience_data_right{
+        padding-left: 79px;
+    }
+}
 
 /* SMALL DEVICES */
 @media screen and (max-width: 350px) {}

@@ -1,6 +1,6 @@
 import FaceApp from "../../assets/faceApp.png";
 import WebApp from "../../assets/streamlit.png";
-import Risk from "../../assets/Risk.svg";
+import Risk from "../../assets/determining-risk.jpg";
 import Art from "../../assets/art.png";
 import Clothes from "../../assets/clothes.png";
 import utau from "../../assets/utau2.png";
@@ -49,7 +49,7 @@ const Menu = [
     image: Clothes,
     title: "Clothing Patterns Design",
     content:
-      "Collaborated with friends on creating products with Chinese traditional elements.  Check out our TikTok to explore more! https://v.douyin.com/id9sDYK1/",
+      "Collaborated with friends on creating products with Chinese traditional elements.  Check out our TikTok to explore more!",
     category: "Creative",
     path: "https://world.taobao.com/item/641306606379.htm?spm=a21wu.11804641-tw.shop-content.11.21e6623dwuo3db",
   },

@@ -27,7 +27,7 @@ const Projects = () => {
         </span>
       </div>
 
-      <div className="work_container grid">
+      <div className="work_container">
         {items.map((elem) => {
           const { id, image, title, path, content, category } = elem;
           return (
@@ -42,14 +42,15 @@ const Projects = () => {
               <a target="_blank" href={path} className="work_button">
                 <i className="icon-link work_button-icon"></i>
               </a>
-              {id == 5 ? <a
-                target="_blank"
-                href="https://v.douyin.com/id9sDYK1/"
-                className="tiktok_link"
-              >
-                <i className="bx bxl-tiktok"></i>
-              </a>
-                : null}
+              {id == 5 ? (
+                <a
+                  target="_blank"
+                  href="https://v.douyin.com/id9sDYK1/"
+                  className="tiktok_link"
+                >
+                  <i className="bx bxl-tiktok"></i>
+                </a>
+              ) : null}
             </div>
           );
         })}

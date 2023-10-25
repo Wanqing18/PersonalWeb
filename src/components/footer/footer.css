@@ -1,11 +1,11 @@
 .footer {
     border-top: 1px solid #ccdede;
-    color: #ccdede;
+    color: #ccdede; 
 }
 
 .footer_container {
     padding: 2rem 0 6rem;
-    background-color: #ccdede;
+     background-color: #ccdede; 
 }
 
 .footer_title,
@@ -16,7 +16,8 @@ footer_link {
 .footer_title {
     font-family: 'Lobster', sans-serif;
     font-size: 3rem;
-    color: #5b7d80;
+    color: #ded5af;
+    text-shadow: 1px 1px 2px #708890;
     text-align: center;
     margin-bottom: var(--mb-2);
 
@@ -61,6 +62,9 @@ footer_link {
     color: var(--first-color);
 }
 
+.footer_link:hover {
+    color: var(--first-color);
+}
 .footer_copy {
     display: block;
     margin-top: 1.5rem;

@@ -5,13 +5,13 @@
 }
 
 .about_container{
-    padding:15rem;
+    padding: 2rem 25rem;
 }
 
  .about_data {
     position:relative;
     left:400px;
-    width:700px;
+    width:600px;
     height: 300px;
     bottom: 450px;
     padding: 1.875rem;
@@ -40,10 +40,13 @@
     width:600px;
     position:relative;
     justify-self: center;
+    
  }
  .about_description {
+    padding-top: 10px;
      text-align: justify;
      margin-bottom: 1rem ;
+     width: 530px;
  }
  
  .button {
@@ -123,7 +126,6 @@
         
     }
 
-
     .about_img{
         justify-self: center;
     }
@@ -134,11 +136,15 @@
         position:relative;
         justify-self: center;
     }
+    .about_data::before{
+        display: none;
+    }
     .about_description{
         padding: 0 5rem;
         margin-bottom: 2rem;
     }
-    .button {
+    .about_button {
+        margin-right: 100px;
         margin-top: 30px;
         position:relative;
      }
@@ -147,13 +153,18 @@
 
  @media screen and (max-width: 768px){  
     .about_container{
+        padding: 2rem 10rem;
+        left:10px;
         grid-template-columns: 350px;
     }
     .about_data::before{
 
         left:47%;
     }
+    .about_button{
+        margin-right: 100px;
 
+    }
     .about_data{
         grid-template-columns: 1fr;
         row-gap: 1.875rem;
@@ -174,11 +185,18 @@
     }
     .about_data{
         justify-self: center;
-        width:550px;
+        width:400px;
         height: 400px;
     }
     .about_info{
         width: 400px;
+    }
+    .about_description{
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    margin-bottom: 1rem ;
+    width: 400px;
     }
 }
  /* SMALL DEVICES */

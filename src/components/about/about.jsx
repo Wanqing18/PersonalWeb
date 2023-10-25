@@ -18,12 +18,12 @@ const About = () => {
             <p className="about_description">
               Hello! I am Wanqing, you can call me Christal! I am an Artist,
               Designer, and Data Scientist, software Engineer. I have experience
-              in Machine Learning Applications and Web Design.Feel free to check
-              out more projects that I did in 'Recent Work' Section. Happy to
-              Connect!
+              in Machine Learning Applications and Web Design. Feel free to
+              check out more projects that I did in 'Recent Work' Section. Happy
+              to Connect!
             </p>
 
-            <a href={resume} className="button">
+            <a href={resume} className="about_button button">
               Download Resume
             </a>
           </div>
