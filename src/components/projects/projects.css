@@ -8,6 +8,7 @@
 .work_filters{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 1.875rem;
     margin-bottom: 2.5rem;
 }
@@ -24,6 +25,7 @@
 .work_container{
     grid-template-columns: repeat(3, 1fr);
     gap: 1.875rem;
+    background-color: #ccdede;
 }
 
 .work_card{
@@ -40,7 +42,7 @@
     border-radius: var(--border-radius);
 }
 .work_mask{
-    background: cornflowerblue;
+    background: #a0c0d0;
     position:absolute;
     left:0;
     top: 0;
@@ -57,7 +59,7 @@
 
 .work_category{
     color:#fff;
-    background-color: var(--first-color);
+    background-color: var(--hover-color);
     border-bottom-left-radius: 0.98rem;
     border-bottom-right-radius: 0.98rem;
     position: absolute;
@@ -73,26 +75,26 @@
 
 .work_title {
     color: #fff;
-    font-size: var(--h3-font-size);
+    font-size: 1rem;
     margin: 0 0 0.98rem;
     padding: 0 1.25rem;
     position: absolute;
-    top:3.75rem;
+    top:1.75rem;
     transform: translateY(30px);
     transition:  .3s;
     opacity: 0;
 }
 .work_descriptions {
     color: floralwhite;
-    font-size: var(--h3-font-size);
+    font-size: 0.9rem;
     margin: 0 0 0.98rem;
     padding: 0 1.25rem;
     position: absolute;
-    top:8rem;
+    top:4rem;
     transform: translateY(30px);
     transition:  .3s;
     opacity: 0;
-
+    
 }
 .work_button{
     color:#fff;
@@ -101,7 +103,7 @@
     left: 1.5rem;
     font-size: var(--h3-font-size);
     display: block;
-    background-color: #ffd15c;
+    background-color: #f5cbae;
     height: 40px;
     width: 40px;
     cursor: pointer;
@@ -125,4 +127,27 @@
 .work_card:hover .work_descriptions{
     opacity: 1;
     transform:  translateY(0);
+}
+
+@media screen and (max-width:1024px) {
+    .work_filters{
+        justify-content: center;
+    }
+    .work_container {
+        grid-template-columns: repeat(2,330px);
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .work_filters{
+        row-gap: .25rem;
+        justify-content: center;
+    }
+    .work_container {
+        grid-template-columns: 310px;
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
 }

@@ -36,7 +36,6 @@ const Projects = () => {
                 <img src={image} alt="" className="work_img" />
                 <div className="work_mask"></div>
               </div>
-
               <span className="work_category">{category}</span>
               <h3 className="work_title">{title}</h3>
               <span className="work_descriptions">{content}</span>
@@ -49,6 +48,18 @@ const Projects = () => {
       </div>
     </section>
   );
+  //   function showTiktok(classid) {
+  //     if (work_card.id === classid) {
+  //       return;
+  //       <a
+  //         target="_blank"
+  //         href="https://v.douyin.com/id9sDYK1/"
+  //         className="tiktok_link"
+  //       >
+  //         <i className="bx bxl-tiktok"></i>
+  //       </a>;
+  //     }
+  //   }
 };
 
 export default Projects;
