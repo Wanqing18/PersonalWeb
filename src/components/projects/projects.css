@@ -6,7 +6,7 @@
 
 
 .work_filters {
-    padding-left: 60px;
+    padding-left: 150px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -161,7 +161,8 @@
 
 @media screen and (max-width:1024px) {
     .work_filters {
-        justify-content: center;
+        justify-content: justify;
+        padding-left:50px;
     }
 
     .work_container {
@@ -175,6 +176,7 @@
     .work_filters {
         row-gap: .25rem;
         justify-content: center;
+        padding-left: 0;
     }
 
     .work_container {

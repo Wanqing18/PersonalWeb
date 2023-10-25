@@ -50,9 +50,11 @@ const Experience = () => {
             <div className="experience_data_left">
               <div>
                 <h3 align="right" className="experience_title">
-                  Finance and Economics Master
+                  Master of Finance and Economics
                 </h3>
-                <span className="experience_subtitle">Western Ontario</span>
+                <span className="experience_subtitle">
+                  University of Western Ontario
+                </span>
                 <div className="experience_calendar">
                   <i className="uil uil-calendar-alt"></i> 2020 - 2021
                 </div>
@@ -71,10 +73,10 @@ const Experience = () => {
               </div>
               <div>
                 <h3 className="experience_title">
-                  Finance and Economics Bachelour
+                  Bachelor of Finance and Economics
                 </h3>
                 <span className="experience_subtitle">
-                  University of Toronto
+                  University of Toronto Rotman Commerce
                 </span>
                 <div className="experience_calendar">
                   <i className="uil uil-calendar-alt"></i> 2016 - 2020
