@@ -123,7 +123,7 @@
 }
 
 .home:hover {
-  background-image: url("../../assets/fp-3.png");
+  background-image: url("../../assets/fp-2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -135,8 +135,25 @@
 
 /*============ BREAKPOINTS ==============*/
 /* LARGER DEVICES */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
+  .about_container{
+    padding-left: 15rem;
+  }
+  .home_button {
+    grid-template-columns: 300px 360px;
+    justify-content: center;
+  }
 
+  .home_section_title {
+    font-size: 80px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about_contianer{
+    padding-left: 0;
+  }
   .home_button {
     grid-template-columns: 300px 360px;
     justify-content: center;
