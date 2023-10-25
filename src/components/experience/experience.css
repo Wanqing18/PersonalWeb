@@ -1,15 +1,10 @@
-
-
 .experience_section_title,
-.experience_section_subtitle{
+.experience_section_subtitle {
     text-align: center;
     margin-top: 0.5rem;
 }
-.experience_container {
-    max-width: 768px;
-}
 
-.experience_tabs{
+.experience_tabs {
     display: flex;
     justify-content: center;
     margin-bottom: var(--mb-2);
@@ -25,7 +20,7 @@
 }
 
 .experience_button:hover {
-    color:var(--first-color);
+    color: var(--first-color);
 }
 
 .experience_icon {
@@ -43,6 +38,10 @@
     justify-content: center;
 }
 
+.experience_container {
+    padding: 0;
+}
+
 .experience_content {
     display: none;
 }
@@ -51,21 +50,25 @@
     display: block;
 }
 
-.experience_data {
+.experience_data_right {
     display: grid;
-    grid-template-columns:  1fr max-content 1fr;
-    column-gap:  1.5rem;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
 
+.experience_data_left {
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
 }
 
 .experience_title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    position: flex;
-    display: flex;
 }
 
-.experience_subtitle{
+.experience_subtitle {
     display: inline-block;
     font-size: var(--small-font-size);
     position: relative;
@@ -75,7 +78,7 @@
     font-size: var(--small-font-size);
 }
 
-.experience_rounder{
+.experience_rounder {
     display: inline-block;
     width: 13px;
     height: 13px;
@@ -83,25 +86,22 @@
     border-radius: 50%;
 }
 
-.experience_line{
+.experience_line {
     display: block;
     width: 1px;
     height: 100%;
     background-color: var(--title-color);
-    transform: translate(6px,-7px);
+    transform: translate(6px, -7px);
 }
 
 /*============ BREAKPOINTS ==============*/
 /* LARGER DEVICES */
-@media screen and (max-width: 1024px){    
-}
+@media screen and (max-width: 1024px) {}
 
 /* MEDIUM DEVICES */
-@media screen and (max-width: 768px){  
-}
-@media screen and (max-width: 576px){  
-}
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {}
 
 /* SMALL DEVICES */
-@media screen and (max-width: 350px){  
-}
+@media screen and (max-width: 350px) {}

@@ -1,9 +1,9 @@
-/* .main{
-    margin-left: 110px;
-} */
+.main {
+    background-color: #bed0cb;
+}
 
 @media screen and (max-width: 1024px) {
-    .main{
+    .main {
         margin-left: 0;
     }
 }

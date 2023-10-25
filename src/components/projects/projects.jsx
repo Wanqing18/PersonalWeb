@@ -42,24 +42,20 @@ const Projects = () => {
               <a target="_blank" href={path} className="work_button">
                 <i className="icon-link work_button-icon"></i>
               </a>
+              {id == 5 ? <a
+                target="_blank"
+                href="https://v.douyin.com/id9sDYK1/"
+                className="tiktok_link"
+              >
+                <i className="bx bxl-tiktok"></i>
+              </a>
+                : null}
             </div>
           );
         })}
       </div>
     </section>
   );
-  //   function showTiktok(classid) {
-  //     if (work_card.id === classid) {
-  //       return;
-  //       <a
-  //         target="_blank"
-  //         href="https://v.douyin.com/id9sDYK1/"
-  //         className="tiktok_link"
-  //       >
-  //         <i className="bx bxl-tiktok"></i>
-  //       </a>;
-  //     }
-  //   }
 };
 
 export default Projects;
