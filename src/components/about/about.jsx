@@ -9,11 +9,12 @@ const About = () => {
     <section className="container section" id="about">
       <h2 className="about_section_title">About Me</h2>
 
-      <div className="about_container grid">
-        <img src={AboutImg} alt="" className="about_img" />
-        <Contact />
-
-        <div className="about_data grid">
+      <div className="about_container">
+        <div className="about_data_left">
+          <img src={AboutImg} alt="" className="about_img" />
+          <Contact />
+        </div>
+        <div className="about_data_right">
           <div className="about_info">
             <p className="about_description">
               Hello! I am Wanqing, you can call me Christal! I am an Artist,
