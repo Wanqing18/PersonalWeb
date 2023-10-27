@@ -117,7 +117,7 @@
 
     .about_container {
         display: grid;
-         padding: 2rem 10rem; 
+        padding: 2rem 10rem;
         left: 10px;
         /* grid-template-columns: repeat(auto-fit, 300px); */
         justify-content: center;
@@ -150,15 +150,18 @@
 @media screen and (max-width: 768px) {
     .about_container {
         display: grid;
-         padding: 2rem 10rem; 
+        padding: 2rem 10rem;
         left: 10px;
-        grid-template-columns: repeat(auto-fit, 300px); 
+        grid-template-columns: repeat(auto-fit, 300px);
         justify-content: center;
     }
 
     .about_button {
         margin-right: 100px;
+    }
 
+    .container {
+        padding: 0;
     }
 
     .about_data_right {
@@ -240,7 +243,8 @@
         justify-self: center;
 
     }
-    .about_button{
+
+    .about_button {
         height: 3rem;
         margin-right: 0;
 
