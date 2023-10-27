@@ -88,7 +88,17 @@ footer_link {
 /* MEDIUM DEVICES */
 @media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .footer_title{
+        font-size: 2rem;
+    }
+    .footer_subtitle{
+        font-size: 1rem;
+    }
+    .footer_list{
+        font-size: 0.9rem;
+    }
+}
 
 /* SMALL DEVICES */
 @media screen and (max-width: 350px) {}

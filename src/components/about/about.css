@@ -114,13 +114,12 @@
 /* LARGER DEVICES */
 @media screen and (max-width: 1024px) {
 
-    .about_description {}
 
     .about_container {
         display: grid;
-        padding: 2rem 10rem;
+         padding: 2rem 10rem; 
         left: 10px;
-        grid-template-columns: repeat(auto-fit, 300px);
+        /* grid-template-columns: repeat(auto-fit, 300px); */
         justify-content: center;
     }
 
@@ -149,6 +148,13 @@
 /* MEDIUM DEVICES */
 
 @media screen and (max-width: 768px) {
+    .about_container {
+        display: grid;
+         padding: 2rem 10rem; 
+        left: 10px;
+        grid-template-columns: repeat(auto-fit, 300px); 
+        justify-content: center;
+    }
 
     .about_button {
         margin-right: 100px;
@@ -171,7 +177,7 @@
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     .about_container {
         grid-template-columns: repeat(auto-fit, 300px);
     }
@@ -194,7 +200,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 425px) {
     .about_container {
         grid-template-columns: repeat(auto-fit, 200px);
     }
@@ -205,19 +211,19 @@
 
     .about_data_right {
         justify-self: center;
-        width: 400px;
+        width: 350px;
         height: 400px;
     }
 
     .about_info {
-        width: 400px;
+        width: 300px;
     }
 
     .about_description {
         padding-top: 10px;
         padding-left: 10px;
         margin-bottom: 1rem;
-        width: 320px;
+        width: 280px;
     }
 
     .about_img {
@@ -234,10 +240,15 @@
         justify-self: center;
 
     }
+    .about_button{
+        height: 3rem;
+        margin-right: 0;
+
+    }
 }
 
 /* SMALL DEVICES */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 370px) {
     .about_container {
         grid-template-columns: 1fr;
     }

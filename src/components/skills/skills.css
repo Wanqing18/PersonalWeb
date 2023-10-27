@@ -74,19 +74,28 @@
 }
 
 /* MEDIUM DEVICES */
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 640px) {
+    skills_content{
+        width:400px;
+    }
 } 
 
 @media screen and (max-width: 576px){  
+    skills_content{
+        width:400px;
+    }
     .skills_container {
         grid-template-columns: 1fr;
     }
     .skills_container {
         padding: 1.5rem;
     }
-} */
-
+} 
+@media screen and (max-width: 425px) {
+    .skills_content{
+        width:350px;
+    }
+}
 /* SMALL DEVICES */
 @media screen and (max-width: 350px) {
     .skills_container {
