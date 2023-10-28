@@ -48,7 +48,7 @@
 }
 
 .work_mask {
-     background: #a0c0d0; 
+    background: #a0c0d0;
     position: absolute;
     left: 0;
     top: 0;
@@ -162,7 +162,7 @@
 @media screen and (max-width:1024px) {
     .work_filters {
         justify-content: justify;
-        padding-left:50px;
+        padding-left: 50px;
     }
 
     .work_container {
@@ -187,15 +187,18 @@
 }
 
 @media screen and (max-width:425px) {
-    .work_img{
+    .work_img {
         width: 280px;
     }
-    .work_mask{
+
+    .work_mask {
         width: 280px;
     }
-    .work_card{
+
+    .work_card {
         width: 280px;
     }
+
     .work_filters {
         row-gap: .25rem;
         justify-content: center;
@@ -203,23 +206,26 @@
 
     .work_container {
         grid-template-columns: 310px;
-        justify-content: center;
+        justify-items: center;
         row-gap: 1.875rem;
-        width: 280px;
         padding: 2rem 5rem;
     }
 
 }
+
 @media screen and (max-width:375px) {
-    .work_img{
+    .work_img {
         width: 280px;
     }
-    .work_mask{
+
+    .work_mask {
         width: 280px;
     }
-    .work_card{
+
+    .work_card {
         width: 280px;
     }
+
     .work_filters {
         row-gap: .25rem;
         justify-content: center;
@@ -229,7 +235,6 @@
         grid-template-columns: 310px;
         justify-content: center;
         row-gap: 1.875rem;
-        width: 280px;
     }
 
 }

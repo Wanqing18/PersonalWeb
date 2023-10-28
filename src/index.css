@@ -12,14 +12,14 @@
   --title-color: #304050;
   --title-color-dark: hsl(0, 0%, 0%);
   --text-color: #304050;
-  --body-color: hsl(258,60%, 98%);
+  --body-color: hsl(258, 60%, 98%);
   --container-color: #Dfeae4;
 
   /*================ FRONT AND TYPOGRAPHY ==============*/
-  --body-font:'Rubik', sans-serif;
+  --body-font: 'Rubik', sans-serif;
 
   /* .5rem= 8px | 1rem = 16px ...*/
- 
+
   --big-font-size: 3.5rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
@@ -41,26 +41,26 @@
   --border-radius: 20px;
 
 
- /*================ Margenes Bottom ======================*/
-/* .5rem= 8px | 1rem = 16px ...*/
---mb-0-25: 0.25rem;
---mb-0-5: 0.5rem;
---mb-0-75: 0.75rem;
---mb-1: 1rem;
---mb-1-5: 1.5rem;
---mb-2: 2rem;
---mb-2-5: 2.5rem;
---mb-3: 3rem;
+  /*================ Margenes Bottom ======================*/
+  /* .5rem= 8px | 1rem = 16px ...*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
 
 
- /*================ Z INDEX ======================*/
- --z-tooltip: 10;
- --z-fixed: 100;
- --z-modal: 1000;
+  /*================ Z INDEX ======================*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 }
- 
- /*============= RESPONSIVE TYPOGRAPHY ==============*/
-@media screen and (max-width: 1024px){
+
+/*============= RESPONSIVE TYPOGRAPHY ==============*/
+@media screen and (max-width: 1024px) {
   :root {
     --big-font-size: 2.75rem;
     --h1-font-size: 1.75rem;
@@ -73,32 +73,35 @@
   }
 
 }
+
 /*============= BASE ==============*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body,
 button,
 input,
-textarea{
+textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
 
-body{
+body {
   background-color: var(--body-color);
   line-height: 1.7;
   color: var(--text-color);
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
   line-height: 1.2;
@@ -129,7 +132,7 @@ img {
   padding-top: 10rem;
 }
 
-.section_title{
+.section_title {
   font-size: var(--h1-font-size);
   margin-left: var(--small-font-size);
   font-weight: var(--font-bold);
@@ -140,33 +143,33 @@ img {
 
 .section_subtitle::before {
   content: "";
-  background:url() ;/*need image*/
+  background: url();
+  /*need image*/
   height: 2.25rem;
   width: 2.25rem;
-  position:absolute;
+  position: absolute;
   left: -0.875rem;
-  top:-0.875rem;
+  top: -0.875rem;
   /*display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;*/
 }
 
 .section_title,
-.section_subtitle{
+.section_subtitle {
   text-align: center;
 }
 
 /*============= LAYOUT ==============*/
 .container {
 
-  padding: 5rem;
   /* margin-left: 15px;
   margin-right: 15px;
   margin: 0 auto ; */
   background-color: #bed0cb;
 }
 
-.grid{
+.grid {
   display: grid;
   gap: 1.5rem;
   margin-top: 70px;
@@ -181,23 +184,24 @@ img {
   line-height: 1;
   border-radius: 1.875rem;
   box-shadow: 0 0 1px rgb(0 0 0 / 0%);
-  border:1px solid transparent;
+  border: 1px solid transparent;
   color: #fff;
-  font-weight:var(--font-bold);
+  font-weight: var(--font-bold);
 }
 
 @keyframes button-push {
   50% {
     transform: scale(0.8);
   }
+
   100% {
     transform: scale(1);
   }
 }
 
-.button:hover{
+.button:hover {
   animation: button-push 0.3s linear 1;
-  background-color:var(--hover-color);
+  background-color: var(--hover-color);
 }
 
 /*.button_icon {
@@ -210,15 +214,16 @@ img {
 }*/
 /*============ BREAKPOINTS ==============*/
 /* LARGER DEVICES */
-@media screen and (max-width: 1024px){  
-}
+@media screen and (max-width: 1024px) {}
 
 /* MEDIUM DEVICES */
-@media screen and (max-width: 768px){  
-}
-@media screen and (max-width: 576px){  
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+  .section {
+    padding-top: 3em;
+  }
 }
 
 /* SMALL DEVICES */
-@media screen and (max-width: 350px){  
-}
+@media screen and (max-width: 350px) {}
