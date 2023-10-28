@@ -219,7 +219,11 @@ img {
 /* MEDIUM DEVICES */
 @media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+  .section {
+    padding-top: 3em;
+  }
+}
 
 /* SMALL DEVICES */
 @media screen and (max-width: 350px) {}
