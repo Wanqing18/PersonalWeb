@@ -50,7 +50,8 @@
     display: block;
 }
 
-.experience_data_right {
+.experience_data_right,
+.experience_data_work_right{
     display: grid;
     padding-top: 10px;
     grid-template-columns: 1fr max-content 1fr;
@@ -105,6 +106,9 @@
 @media screen and (max-width: 437px) {
     .experience_data_right{
         padding-left: 79px;
+    }
+    .experience_data_work_right{
+        padding-left: 65px;
     }
 }
 

@@ -107,7 +107,7 @@ const Experience = () => {
               </div>
             </div>
 
-            <div className="experience_data_right">
+            <div className="experience_data_work_right">
               <div></div>
 
               <div>
