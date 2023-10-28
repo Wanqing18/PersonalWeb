@@ -159,6 +159,22 @@
     transform: translateY(0);
 }
 
+@media screen and (max-width:1180px) {
+    .work_card{
+        width:300px;
+    }
+    .work_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .work_thumbnail{
+        width: 300px;
+    }
+    .work_img{
+        width: 300px;
+    }
+}
+
+
 @media screen and (max-width:1024px) {
     .work_filters {
         justify-content: justify;
