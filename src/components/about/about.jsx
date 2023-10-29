@@ -24,7 +24,7 @@ const About = () => {
               to Connect!
             </p>
 
-            <a href={resume} className="about_button button">
+            <a target="_blank" href={resume} className="about_button button">
               Download Resume
             </a>
           </div>
