@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <>
       <aside className={toggle ? "aside show_menu" : "aside"}>
-        <a href="home" className="nav_logo">
+        <a href="#home" className="nav_logo">
           <img src={logo} alt="" className="logo_img" />
         </a>
 
